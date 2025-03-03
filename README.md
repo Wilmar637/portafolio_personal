@@ -13,4 +13,4 @@
 
 ###Wilmar Diaz Soto
 
-### Linkedin: https://www.linkedin.com/school/aluracursos/
+### Linkedin: www.linkedin.com/in/wilmar-diaz-soto-adso
