@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap'); /*con esto importamos las fuentes de google fonts*/
+:root{
+    --color-primario: #22D4FD; /*con esto se le da un color a una variable*/
+    --color-secundario: #000000; /*con esto se le da un color a una variable*/
+    --color-terciario: #f6f6f6; /*con esto se le da un color a una variable*/
+    --color-hover: #272727; /*con esto se le da un color a una variable*/
+
+    --fuente-Montserrat: 'Montserrat', serif; /*con esto se le da una fuente de letra a una variable*/
+    --fuente-Krona: 'Krona One', serif; /*con esto se le da una fuente de letra a una variable*/
+}
+
+/* el (*) significa que se va hacer un cambio universal osea en todos los elemntos del html
+esto modifica el "box model" */
+*{
+    margin: 0; /*con esto se le quita el margen a todos los elementos*/
+    padding: 0; /*con esto se le quita el padding a todos los elementos*/
+}
+
+/* se le da un color de fondo al body y se le da un color de letra y se le da una fuente de letra*/
+body{
+    background-color: var(--color-secundario); /*con esto se le da un color de fondo*/
+    color: var(--color-terciario); /*con esto se le da un color de letra*/
+    box-sizing: border-box; /*esto es para que el padding y el margin no afecten el tamaño de la caja*/
+}
+
+.header{
+    padding: 2% 0% 0% 10%; /*con esto se le da un padding de 2% arriba, 0% a la derecha, 0% abajo y 10% a la izquierda*/
+
+}
+
+.header_menu{
+    display: flex; /*con esto se hace que los elementos hijos se alineen en una fila*/
+    gap: 80px; /*con esto se le da un espacio de 80px entre los elementos hijos*/
+
+}
+
+.header_menu_link{
+    font-family: var(--fuente-Montserrat); /*con esto se le da una fuente de letra que importamos de google fonts*/
+    font-size: 1.5rem; /*con esto se le da un tamaño de letra de 24px*/
+    font-weight: 600; /*con esto se le da un peso de letra de 600*/
+    color: var(--color-primario); /*con esto se le da un color de letra*/
+    text-decoration: none; /*con esto se le quita la decoracion de texto*/
+}
+
+.presentacion{
+    display: flex; /*con esto se hace que los elementos hijos se alineen en una fila*/
+    align-items: center; /*con esto se hace que los elementos hijos se alineen en el centro*/
+    padding: 5% 10%; /*con esto se le da un padding de 5% arriba y abajo y 10% a los lados*/
+    justify-content: space-between; /*con esto se hace que los elementos hijos se alineen en los extremos*/
+    gap: 82px; /*con esto se le da un espacio de 82px entre los elementos hijos*/
+}
+
+.presentacion_contenido{
+    width: 50%; /*con esto se le da un ancho de 50%*/
+    display : flex; /*con esto se hace que los elementos hijos se alineen en una fila*/
+    flex-direction: column; /*con esto se hace que los elementos hijos se alineen en una columna*/
+    gap: 40px; /*con esto se le da un espacio de 40px entre los elementos hijos*/
+}
+
+.presentacion_contenido_titulo{
+    font-size: 2rem; /*con esto se le da un tamaño de letra de 36px*/
+    font-family: var(--fuente-Krona); /*con esto se le da una fuente de letra que importamos de google fonts*/
+}
+
+/* con el (.) se llaman las clases css*/
+.titulo-destaque{
+    color: var(--color-primario); /*con esto se le da un color de letra*/ 
+}
+
+.presentacion_contenido_texto{
+    font-size: 1.5rem; /*con esto se le da un tamaño de letra de 18px*/
+    font-family: var(--fuente-Montserrat); /*con esto se le da una fuente de letra que importamos de google fonts*/
+}
+
+.presentacion_enlaces{
+    display : flex; /*con esto se hace que los elementos hijos se alineen en una fila*/
+    justify-content: space-between; /*con esto se hace que los elementos hijos se alineen en los extremos*/ 
+    flex-direction: column; /*con esto se hace que los elementos hijos se alineen en una columna*/
+    align-items: center; /*con esto se hace que los elementos hijos se alineen en el centro*/
+    gap: 32px; /*con esto se le da un espacio de 20px entre los elementos hijos*/
+}
+
+.presentacion_enlaces_links{
+    width: 50%; /*con esto se le da un ancho de 280px*/
+    color: var(--color-terciario); /*con esto se le da un color de letra*/
+    text-align: center; /*con esto se hace que el texto se alinee en el centro*/
+    padding: 21.5px 0; /*con esto se le da un padding de 21.5px arriba y abajo y 0 a los lados*/
+    border-radius: 8px; /*con esto se le da un borde redondeado de 16px*/
+    font-family: var(--fuente-Montserrat); /*con esto se le da una fuente de letra que importamos de google fonts*/
+    font-size: 1.5rem; /*con esto se le da un tamaño de letra de 24px*/
+    font-weight: 600; /*con esto se le da un peso de letra de 600*/
+    text-decoration: none; /*con esto se le quita la decoracion de texto*/
+    border: 2px solid var(--color-primario); /*con esto se le da un borde de 2px solido*/
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.presentacion_enlaces_links:hover{
+    background-color: var(--color-hover); /*con esto se le da un color de fondo al pasar el mouse*/
+    color: var(--color-secundario); /*con esto se le da un color de letra al pasar el mouse*/
+}
+
+.presentacion_enlaces_subtitulo{
+    font-family: var(--fuente-Krona); /*con esto se le da una fuente de letra que importamos de google fonts*/
+    font-size: 1.5rem; /*con esto se le da un tamaño de letra de 24px*/
+    font-weight: 400; /*con esto se le da un peso de letra de 400*/
+}
+
+.presentacion__enlaces__link {
+    background-color: var(--color-primario); 
+    display: flex; 
+    justify-content: center;
+    border: 2px solid var(--color-primario);
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+}
+
+.presentacion__enlaces__link:hover {
+    border: 2px solid #0000FF;
+    cursor: pointer;
+    background-color: var(--color-hover);
+}
+
+.presentacion_imagen{
+    width: 50%; /*con esto se le da un ancho de 50%*/
+}
+
+.footer{
+    background-color: var(--color-primario);
+    padding: 24px;
+    color: var(--color-secundario);
+    text-align: center;
+    font-family: var(--fuente-Montserrat);
+    font-size: 1.5rem; /*con esto se le da un tamaño de letra de 24px*/
+    font-weight: 400;
+}
+
+@media(max-width: 1200px){  /*con esto se hace que el css se aplique solo cuando el ancho de la pantalla sea menor a 1200px*/
+    .header{
+        padding: 10%; /*con esto se le da un padding de 10%*/
+    }
+
+    .header_menu{
+        justify-content: center; /*con esto se hace que los elementos hijos se alineen en el centro*/
+    }
+    
+    .presentacion{
+        flex-direction: column-reverse; /*con esto se hace que los elementos hijos se alineen en una columna*/
+        padding: 5%; /*con esto se le da un padding de 5%*/
+    }
+
+    .presentacion_contenido{
+        width: auto; /*con esto se le da un ancho automatico*/
+    }
+
+}
+
+
